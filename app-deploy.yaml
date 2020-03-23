@@ -2,7 +2,15 @@ apiVersion: appsody.dev/v1beta1
 kind: AppsodyApplication
 metadata:
   annotations:
-    image.opencontainers.org/created: "2020-03-21T17:18:39+07:00"
+    commit.image.appsody.dev/author: Khairul Habib <khairul.habib@ibm.com>
+    commit.image.appsody.dev/committer: Khairul Habib <khairul.habib@ibm.com>
+    commit.image.appsody.dev/date: Sat Mar 21 22:31:49 2020 +0700
+    commit.image.appsody.dev/message: Initial commit for java micro profile appsody
+    image.opencontainers.org/created: "2020-03-23T07:27:54+07:00"
+    image.opencontainers.org/documentation: https://github.com/khairulhabibatibm/microapp
+    image.opencontainers.org/revision: 62eb47ce09d3b78afd8ea31b2ff0928ad47d64b2-modified
+    image.opencontainers.org/source: https://github.com/khairulhabibatibm/microapp/tree/master
+    image.opencontainers.org/url: https://github.com/khairulhabibatibm/microapp
     stack.appsody.dev/authors: Emily Jiang <emijiang6@googlemail.com>, Neeraj Laad
       <neeraj.laad@gmail.com>, Ozzy <ozzy@ca.ibm.com>
     stack.appsody.dev/configured: docker.io/appsody/java-microprofile:0.2
@@ -19,7 +27,7 @@ metadata:
     stack.appsody.dev/version: 0.2.24
   name: microapp
 spec:
-  applicationImage: khairulhabib/microapp
+  applicationImage: khairulhabib/microapp:1.2
   createKnativeService: false
   expose: true
   livenessProbe:

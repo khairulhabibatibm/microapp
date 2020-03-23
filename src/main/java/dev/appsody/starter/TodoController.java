@@ -4,12 +4,12 @@ import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/hello")
+@Path("/todo")
 @Singleton
-public class HelloController{
+public class TodoController{
 
     @GET
-    public String hello(){
-        return "Hello World Micro Profile";
+    public String list(){
+        return "This is todo list";
     }
 }
